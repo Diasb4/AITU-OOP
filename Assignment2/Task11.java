@@ -1,6 +1,5 @@
 package Assignment2;
 public class Task11 {
-    // Public static variable multiArray of type int[][][][]
     public static int[][][][] multiArray = {
             {
                     {
@@ -25,7 +24,6 @@ public class Task11 {
     };
 
     public static void main(String[] args) {
-        // Display all numbers from multiArray
         for (int[][][] i : multiArray) {
             for (int[][] j : i) {
                 for (int[] k : j) {
