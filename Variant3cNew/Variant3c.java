@@ -6,7 +6,6 @@ import Assingment4.DAO.Class.Aircraft;
 import Assingment4.DAO.Class.Airport;
 import Assingment4.DAO.Class.Passenger;
 import Assingment4.DAO.PassengerDAO;
-
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -71,9 +70,11 @@ public class Variant3c extends JFrame {
         gbc.insets = new Insets(5, 5, 5, 5);
 
         JLabel airportNameLabel = new JLabel("Airport Name:");
-        airportNameField = new JTextField(20);
+        airportNameField = new JTextField(30);
+        airportNameField.setPreferredSize(new Dimension(250, 30));
         gbc.gridx = 0;
-        gbc.gridy = 0;
+        gbc.gridy = 1;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
         airportInputPanel.add(airportNameLabel, gbc);
         gbc.gridx = 1;
         airportInputPanel.add(airportNameField, gbc);
@@ -81,11 +82,13 @@ public class Variant3c extends JFrame {
         // Aircraft Input Panel
         JPanel aircraftInputPanel = new JPanel(new GridBagLayout());
         JLabel aircraftNameLabel = new JLabel("Aircraft Name:");
-        aircraftNameField = new JTextField(20);
+        aircraftNameField = new JTextField(30);
+        aircraftNameField.setPreferredSize(new Dimension(250, 30));
         JLabel aircraftCapacityLabel = new JLabel("Aircraft Capacity:");
-        aircraftCapacityField = new JTextField(20);
+        aircraftCapacityField = new JTextField(30);
         gbc.gridx = 0;
         gbc.gridy = 0;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
         aircraftInputPanel.add(aircraftNameLabel, gbc);
         gbc.gridx = 1;
         aircraftInputPanel.add(aircraftNameField, gbc);
@@ -98,11 +101,13 @@ public class Variant3c extends JFrame {
         // Passenger Input Panel
         JPanel passengerInputPanel = new JPanel(new GridBagLayout());
         JLabel passengerNameLabel = new JLabel("Passenger Name:");
-        passengerNameField = new JTextField(20);
+        passengerNameField = new JTextField(30);
+        passengerNameField.setPreferredSize(new Dimension(250, 30));
         JLabel passengerSeatNumberLabel = new JLabel("Seat Number:"); // Changed label text
-        passengerSeatNumberField = new JTextField(20); // Changed field variable
+        passengerSeatNumberField = new JTextField(30); // Changed field variable
         gbc.gridx = 0;
         gbc.gridy = 0;
+        gbc.fill = GridBagConstraints.HORIZONTAL;
         passengerInputPanel.add(passengerNameLabel, gbc);
         gbc.gridx = 1;
         passengerInputPanel.add(passengerNameField, gbc);
